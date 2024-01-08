@@ -1,0 +1,37 @@
+/* 設定頁面背景顏色 */
+body {
+  background-color: #9C9C9C;
+}
+
+/* 設定標題的樣式 */
+h1 {
+  color: #FFF;
+  font-size: 40px;
+  margin-top: 50px;
+}
+
+/* 設定連結的樣式 */
+a {
+  color: #FFF;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+/* 設定按鈕的樣式 */
+input[type="button"] {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin: 10px;
+  background-color: #555;
+  color: #FFF;
+  cursor: pointer;
+}
+
+/* 設定按鈕 hover 時的樣式 */
+input[type="button"]:hover {
+  background-color: #333;
+}
+
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <link rel="shortcut icon"
+    href="圖片.jpg">
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Pls Donate</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-container input[type="button"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .button-container input[type="button"]:hover {
+            background-color: #ff6600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p id="copy">loadstring(game:HttpGet("https://raw.githubusercontent.com/CF-Trail/tzechco-PlsDonateAutofarmBackup/main/autofarm"))()
+</p>
+        <button type="button" onclick="copyEvent('copy')">複製</button>
+    </div>
+
+    <div class="button-container">
+        <input type="button" onclick="javascript:location.href='https://Wang-Ye.o19831023.repl.co'" value="回到首頁" />
+        <input type="button" onclick="history.back()" value="回到上一頁" />
+    </div>
+
+    <script>
+        function copyEvent(id)
+        {
+            var str = document.getElementById(id);
+            var selection = window.getSelection();
+            var range = document.createRange();
+            range.selectNodeContents(str);
+            selection.removeAllRanges();
+            selection.addRange(range);
+            document.execCommand("Copy");
+            selection.removeAllRanges();
+        }
+    </script>
+
+    <script src="script.js"></script>
+    <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>
