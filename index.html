@@ -56,7 +56,28 @@
     }
   </style>
 </head>
+<script>
+  // 使用JavaScript检测设备类型并调整样式
+  function adjustStyles() {
+    var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
+    if (screenWidth <= 768) {
+      document.querySelector('h1').style.fontSize = '30px';
+      document.querySelector('h2').style.fontSize = '20px';
+      document.querySelector('h3').style.fontSize = '15px';
+      document.querySelector('iframe').style.height = '150px';
+    } else {
+      // 如果屏幕宽度大于 768px，恢复原始样式
+      document.querySelector('h1').style.fontSize = '40px';
+      document.querySelector('h2').style.fontSize = '25px';
+      document.querySelector('h3').style.fontSize = '20px';
+      document.querySelector('iframe').style.height = '200px';
+    }
+  }
+
+  // 在页面加载时调用一次，并注册 resize 事件
+  window.onload = window.onresize = adjustStyles;
+</script>
 <body>
   <header>
     <img src="橫幅.png" alt="Logo" class="logo" />
@@ -101,7 +122,7 @@
       allowfullscreen></iframe>
     <br>
 
-    
+    </script>
 
     <a href="script.html">
        <h2><font color=black>前往第二頁(腳本)</font></h2>
