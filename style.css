@@ -11,3 +11,41 @@ html, body {
     border-radius: 15px; /* 更大的圆角 */
     box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* 添加阴影效果 */
 }
+/* 默认样式 */
+body {
+  background-image: url('背景.jpg');
+  /* 使用默认背景图 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: gold;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+iframe {
+  width: 560px; /* 默认宽度 */
+  height: 315px; /* 默认高度 */
+  margin: 20px 0;
+}
+
+/* 在屏幕宽度小于等于 768px 时应用的样式 */
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url('手機背景.jpg');
+    /* 使用移动端背景图 */
+  }
+
+  iframe {
+    width: 100%; /* 使 iframe 宽度填充父容器 */
+    height: 200px; /* 调整高度 */
+  }
+
+  h1 {
+    font-size: 30px; /* 调整标题字体大小 */
+  }
+
+  /* 在此添加其他需要调整的样式 */
+}
