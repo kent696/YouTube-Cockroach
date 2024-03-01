@@ -1,0 +1,93 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4); /* 半透明的白色背景 */
+    border: 2px solid #0078d4; /* 蓝色边框 */
+    border-radius: 15px; /* 更大的圆角 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* 添加阴影效果 */
+}
+/* 默认样式 */
+body {
+  background-image: url('背景.jpg');
+  /* 使用默认背景图 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: gold;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+iframe {
+  width: 560px; /* 默认宽度 */
+  height: 315px; /* 默认高度 */
+  margin: 20px 0;
+}
+
+/* 在屏幕宽度小于等于 768px 时应用的样式 */
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url('手機背景.jpg');
+    /* 使用移动端背景图 */
+  }
+
+  iframe {
+    width: 100%; /* 使 iframe 宽度填充父容器 */
+    height: 200px; /* 调整高度 */
+  }
+
+  h1 {
+    font-size: 30px; /* 调整标题字体大小 */
+  }
+
+  /* 在此添加其他需要调整的样式 */
+}
+
+.ME-button {
+  background-color:  #00aeff;
+  width: 200px; 
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.label {
+  margin-left: 5px;
+}
+.ME-button:hover {
+  opacity: 0.9; /* 当鼠标悬停时，降低按钮的不透明度 */
+}
+
+.CH-button {
+  background-color:  #ff0015;
+  width: 200px; 
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.label {
+  margin-left: 5px;
+}
+.CH-button:hover {
+  opacity: 0.9; /* 当鼠标悬停时，降低按钮的不透明度 */
+}

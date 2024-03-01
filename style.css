@@ -1,57 +1,113 @@
-html, body {
+html {
   height: 100%;
   width: 100%;
 }
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.4); /* 半透明的白色背景 */
-    border: 2px solid #0078d4; /* 蓝色边框 */
-    border-radius: 15px; /* 更大的圆角 */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* 添加阴影效果 */
+.circleImg{
+  border-radius: 50%;
+  width:200px;
+  height:200px;
 }
-/* 默认样式 */
+
+.blog-card {
+max-width: 780xp;
+min-height: 260px;
+display: flex;
+flex-wrap: wrap;
+}
+
+.blog-image {
+ flex: 1 0 240px;
+min-height: 100%;
+max-height: 350px;
+}
+
+.blog-content {
+  flex: 3 1 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* 设置图片样式 */
+.circleImg {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 8px solid transparent; /* 设置边框为透明 */
+  box-shadow: 0 0 50px rgba(0, 0, 0, 100); /* 添加阴影 */
+  /*background: linear-gradient(to bottom right, #ff00bb, #bdd035); /* 添加渐变背景，您可以调整颜色和方向 */
+}
+
 body {
-  background-image: url('背景.jpg');
-  /* 使用默认背景图 */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: gold;
-  text-align: center;
-  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #ef9eff, #061dcb);
   margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-iframe {
-  width: 560px; /* 默认宽度 */
-  height: 315px; /* 默认高度 */
-  margin: 20px 0;
+/* 设置标题样式 */
+h1 {
+  color: #58c3f9; /* 设置文字颜色 */
+  text-align: center;
+  -webkit-text-stroke: 2px #000000; /* 添加描边效果，2px为描边宽度，#fff为描边颜色 */
+  padding: 10px;
+  text-size-adjust: 50px
 }
 
-/* 在屏幕宽度小于等于 768px 时应用的样式 */
-@media screen and (max-width: 768px) {
-  body {
-    background-image: url('手機背景.jpg');
-    /* 使用移动端背景图 */
-  }
-
-  iframe {
-    width: 100%; /* 使 iframe 宽度填充父容器 */
-    height: 200px; /* 调整高度 */
-  }
-
-  h1 {
-    font-size: 30px; /* 调整标题字体大小 */
-  }
-
-  /* 在此添加其他需要调整的样式 */
+/*IG 按鈕*/
+.YT-button {
+  background-color: #e4405f;
+  width: 200px; 
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.YT-button:hover {
+  background-color: #f36284;
+}
+.label {
+  margin-left: 5px;
+}
+.YT-button:hover {
+  opacity: 0.9; /* 当鼠标悬停时，降低按钮的不透明度 */
 }
 
+/*Discord 按鈕*/
+.DC-button {
+  background-color: #0008ff;
+  width: 200px; 
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.DC-button:hover {
+  background-color: #3c43f8;
+}
+.label {
+  margin-left: 5px;
+}
+.DC-button:hover {
+  opacity: 0.9; /* 当鼠标悬停时，降低按钮的不透明度 */
+}
+
+/*了解更多我 按鈕*/
 .ME-button {
-  background-color:  #00aeff;
+  background-color:  #18db32;
   width: 200px; 
   border: none;
   color: rgb(0, 0, 0);
@@ -63,31 +119,14 @@ iframe {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 10px;
+}
+.ME-button:hover {
+  background-color: #57d668;
+;
 }
 .label {
   margin-left: 5px;
 }
 .ME-button:hover {
-  opacity: 0.9; /* 当鼠标悬停时，降低按钮的不透明度 */
-}
-
-.CH-button {
-  background-color:  #ff0015;
-  width: 200px; 
-  border: none;
-  color: rgb(0, 0, 0);
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 25px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 10px;
-}
-.label {
-  margin-left: 5px;
-}
-.CH-button:hover {
   opacity: 0.9; /* 当鼠标悬停时，降低按钮的不透明度 */
 }

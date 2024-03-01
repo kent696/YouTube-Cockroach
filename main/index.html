@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="shortcut icon"
+    href="1.jpg">
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>天ㄚ</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    body {
+      background-image: url('背景.jpg');
+      /* 使用自己的背景圖片 */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: gold;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+
+
+    h1 {
+      font-size: 40px;
+      text-shadow: 2px 2px black;
+    }
+
+    h2 {
+      color: #0083FF;
+      font-size: 25px;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    iframe {
+      margin: 20px 0;
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<script>
+  // 使用JavaScript检测设备类型并调整样式
+  function adjustStyles() {
+    var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+    if (screenWidth <= 768) {
+      document.querySelector('h1').style.fontSize = '30px';
+      document.querySelector('h2').style.fontSize = '20px';
+      document.querySelector('h3').style.fontSize = '15px';
+      document.querySelector('iframe').style.height = '150px';
+    } else {
+      // 如果屏幕宽度大于 768px，恢复原始样式
+      document.querySelector('h1').style.fontSize = '40px';
+      document.querySelector('h2').style.fontSize = '25px';
+      document.querySelector('h3').style.fontSize = '20px';
+      document.querySelector('iframe').style.height = '200px';
+    }
+  }
+
+  // 在页面加载时调用一次，并注册 resize 事件
+  window.onload = window.onresize = adjustStyles;
+</script>
+<body>
+  <header>
+    <img src="橫幅.png" alt="Logo" class="logo" />
+    <h1>roblox外掛</h1>
+  </header>
+
+  <div class="container">
+
+    <a href="https://www.youtube.com/channel/UChzKlZxm9mluh8J2EEc20Ew/videos" class="CH-button">
+      <b><span class="label">YouTube頻道</span></b>
+    </a>
+
+    <br>
+
+    <img src="2.jpg" alt="Channel Image" />
+
+    <h2>手機版啟動器</h2>
+    <a href="https://www.youtube.com/watch?v=I8dg7lAkEnw&t=4s&ab_channel=%E5%A4%A9%E3%84%9A">手機版啟動器(點我)</a>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/I8dg7lAkEnw" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <br>
+
+    <h2>電腦版啟動器</h2>
+    <a href="https://www.youtube.com/watch?v=_DO_tXzu_qk&ab_channel=天ㄚ">電腦版啟動器(點我)</a>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_DO_tXzu_qk?si=MLE4xP2Zrkoi6DW8" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <br>
+
+    <h2>電腦版找key</h2>
+    <a href="https://www.youtube.com/watch?v=8RQu1nszF-4&ab_channel=%E5%A4%A9%E3%84%9A">電腦版找key(點我)</a>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/8RQu1nszF-4" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <br>
+
+    <h2>找腳本教學</h2>
+    <a href="https://www.youtube.com/watch?v=r-XdLKIe6rs&t=14s&ab_channel=%E5%A4%A9%E3%84%9A">找腳本教學(點我)</a>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/r-XdLKIe6rs" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <br>
+
+    </script>
+
+    <a href="../index.html" class="ME-button">
+      <b><span class="label">回到首頁</span></b>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
