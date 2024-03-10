@@ -1,6 +1,7 @@
 window.onload = function () {
-    var linksToMonitor = document.querySelectorAll('.YT-button, .DC-button, .ME-button, .CH-button, .container a');
-
+    var linksToMonitor = document.querySelectorAll('.YT-button, .DC-button, .CH-button, .container a');
+    //, .ME-button
+    
     // 監聽每個連結的點擊事件
     linksToMonitor.forEach(function (link) {
         link.addEventListener('click', function (event) {
@@ -12,9 +13,11 @@ window.onload = function () {
 
             // 設定當請求完成時的處理函式
             xhr.onreadystatechange = function () {
+                console.log('狀態變化:', xhr.readyState);
+
                 if (xhr.readyState == 4) {
                     // 记录状态和响应以进行调试
-                    console.log('状态:', xhr.status);
+                    console.log('最终状态:', xhr.status);
                     console.log('响应:', xhr.responseText);
 
                     // 如果 HTTP 狀態碼為 404，表示檔案不存在
