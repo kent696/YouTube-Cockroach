@@ -1,9 +1,9 @@
-window.onload = function() {
+window.onload = function () {
     var linksToMonitor = document.querySelectorAll('.YT-button, .DC-button, .ME-button, .CH-button, .container a');
 
     // 監聽每個連結的點擊事件
-    linksToMonitor.forEach(function(link) {
-        link.addEventListener('click', function(event) {
+    linksToMonitor.forEach(function (link) {
+        link.addEventListener('click', function (event) {
             // 取得連結的 href 屬性
             var targetFilePath = event.target.getAttribute('href');
 
@@ -11,8 +11,12 @@ window.onload = function() {
             var xhr = new XMLHttpRequest();
 
             // 設定當請求完成時的處理函式
-            xhr.onreadystatechange = function() {
+            xhr.onreadystatechange = function () {
                 if (xhr.readyState == 4) {
+                    // 记录状态和响应以进行调试
+                    console.log('状态:', xhr.status);
+                    console.log('响应:', xhr.responseText);
+
                     // 如果 HTTP 狀態碼為 404，表示檔案不存在
                     if (xhr.status == 404) {
                         // 導向到指定的 HTML 檔案
